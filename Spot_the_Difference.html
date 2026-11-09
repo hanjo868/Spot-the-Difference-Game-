@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot the Difference: Then and Now - Molo Mansion</title>
+    <link rel="stylesheet" href="css/Spot_the_Difference.css">
+</head>
+<body>
+
+    <header>
+        <h1>Spot the Difference: Then and Now</h1>
+        <p class="subtitle">Molo Mansion (Yusay-Consing Ancestral House)</p>
+    </header>
+
+    <div class="status-bar">
+        <div class="status-item">Differences: <span id="found-count">0</span> / 8</div>
+        <div class="status-item">Time Left: <span id="timer">120</span>s</div>
+    </div>
+
+    <div class="game-container">
+        <!-- "THEN" IMAGE CARD -->
+<div class="image-card">
+    <h3>THEN: Pre-Restoration</h3>
+    <div class="image-wrapper" id="then-wrapper">
+        <img src="assets/heritage-house-then.png" alt="Molo Mansion Pre-Restoration" id="then-img">
+    </div>
+</div>
+
+        <!-- "NOW" IMAGE CARD -->
+        <div class="image-card">
+            <h3>NOW: Present-Day Restored</h3>
+            <div class="image-wrapper" id="now-wrapper">
+                <img src="assets/heritage-house-now.jpg" alt="Molo Mansion Present Day" id="now-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP MODAL FOR DISCOVERED DIFFERENCES & GAME END -->
+    <div class="modal" id="info-modal">
+        <div class="modal-content">
+            <h2 id="modal-title">Difference Discovered!</h2>
+            <p id="modal-text">Explanation text goes here...</p>
+            <button id="modal-btn" onclick="closeModal()">Continue</button>
+        </div>
+    </div>
+
+    <script src="js/Spot_the_Difference.js"></script>
+</body>
+</html>
